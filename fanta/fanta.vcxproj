@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{a5b2164b-3a06-4021-bacd-ee6b131761b7}</ProjectGuid>
+    <RootNamespace>fanta</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="includes\minhook\dll_resources\MinHook.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="includes\minhook\dll_resources\MinHook.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="includes\imgui\imconfig.h" />
+    <ClInclude Include="includes\imgui\imgui.h" />
+    <ClInclude Include="includes\imgui\imgui_impl_dx10.h" />
+    <ClInclude Include="includes\imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="includes\imgui\imgui_impl_dx12.h" />
+    <ClInclude Include="includes\imgui\imgui_impl_dx9.h" />
+    <ClInclude Include="includes\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="includes\imgui\imgui_internal.h" />
+    <ClInclude Include="includes\imgui\imstb_rectpack.h" />
+    <ClInclude Include="includes\imgui\imstb_textedit.h" />
+    <ClInclude Include="includes\imgui\imstb_truetype.h" />
+    <ClInclude Include="includes\kiero\kiero.h" />
+    <ClInclude Include="includes\minhook\include\MinHook.h" />
+    <ClInclude Include="includes\minhook\src\buffer.h" />
+    <ClInclude Include="includes\minhook\src\hde\hde32.h" />
+    <ClInclude Include="includes\minhook\src\hde\hde64.h" />
+    <ClInclude Include="includes\minhook\src\hde\pstdint.h" />
+    <ClInclude Include="includes\minhook\src\hde\table32.h" />
+    <ClInclude Include="includes\minhook\src\hde\table64.h" />
+    <ClInclude Include="includes\minhook\src\trampoline.h" />
+    <ClInclude Include="includes\spoofer\spoofer.hpp" />
+    <ClInclude Include="source\core\core.h" />
+    <ClInclude Include="source\features\features.h" />
+    <ClInclude Include="source\features\menu\directhook\direct.h" />
+    <ClInclude Include="source\features\menu\directhook\global.h" />
+    <ClInclude Include="source\features\menu\directhook\types.h" />
+    <ClInclude Include="source\features\menu\draw\draw.h" />
+    <ClInclude Include="source\features\menu\extra\extra.h" />
+    <ClInclude Include="source\features\menu\fonts\fonts.h" />
+    <ClInclude Include="source\features\menu\fonts\inc\font.h" />
+    <ClInclude Include="source\features\menu\fonts\inc\icons.h" />
+    <ClInclude Include="source\features\menu\fonts\inc\matfont.h" />
+    <ClInclude Include="source\features\menu\keyhelper\keyhelper.h" />
+    <ClInclude Include="source\features\menu\menu.h" />
+    <ClInclude Include="source\features\menu\ncc_menu\helper\helper.h" />
+    <ClInclude Include="source\features\menu\ncc_menu\ncc_menu.h" />
+    <ClInclude Include="source\features\menu\ncc_menu\structs\structs.h" />
+    <ClInclude Include="source\features\menu\utils\utils.h" />
+    <ClInclude Include="source\features\misc\misc.h" />
+    <ClInclude Include="source\features\vars\vars.h" />
+    <ClInclude Include="source\features\visuals\thirdperson\third_person.h" />
+    <ClInclude Include="source\features\visuals\visuals.h" />
+    <ClInclude Include="source\hooking\hooking.h" />
+    <ClInclude Include="source\sdk\detours\funcdetours\baseclient\baseclient.h" />
+    <ClInclude Include="source\sdk\detours\funcdetours\clientmodeshared\clientmodeshared.h" />
+    <ClInclude Include="source\sdk\detours\funcdetours\cl_main\cl_main.h" />
+    <ClInclude Include="source\sdk\detours\funcdetours\engine_client\engine_client.h" />
+    <ClInclude Include="source\sdk\detours\funcdetours\engine_vgui\engine_vgui.h" />
+    <ClInclude Include="source\sdk\detours\funcdetours\input\input.h" />
+    <ClInclude Include="source\sdk\detours\funcdetours\net_channel\net_channel.h" />
+    <ClInclude Include="source\sdk\detours\funcdetours\panel\panel.h" />
+    <ClInclude Include="source\sdk\detours\funcdetours\player_domed\player_domed.h" />
+    <ClInclude Include="source\sdk\detours\funcdetours\stream\stream.h" />
+    <ClInclude Include="source\sdk\detours\funcdetours\surface\surface.h" />
+    <ClInclude Include="source\sdk\hl2_src\clientshared\clientshared.h" />
+    <ClInclude Include="source\sdk\hl2_src\keyvaluesystem\keyvaluesystem.h" />
+    <ClInclude Include="source\sdk\hl2_src\keyvalues\keyvalues.h" />
+    <ClInclude Include="source\sdk\hl2_src\movement\movement.h" />
+    <ClInclude Include="source\sdk\hl2_src\prediction\prediction.h" />
+    <ClInclude Include="source\sdk\hl2_src\uniform_stream\uniform_stream.h" />
+    <ClInclude Include="source\sdk\main\baseentity.h" />
+    <ClInclude Include="source\sdk\main\baseentity\baseentity.h" />
+    <ClInclude Include="source\sdk\convar\convar.h" />
+    <ClInclude Include="source\sdk\detours\detours.h" />
+    <ClInclude Include="source\sdk\detours\funcdetours\funcdetours.h" />
+    <ClInclude Include="source\sdk\detours\menudetour\menudetour.h" />
+    <ClInclude Include="source\sdk\detours\menudetour\wnd_proc.h" />
+    <ClInclude Include="source\sdk\globals\globals.h" />
+    <ClInclude Include="source\sdk\hl2_src\appsystem\appsystem.h" />
+    <ClInclude Include="source\sdk\hl2_src\baseclient\baseclient.h" />
+    <ClInclude Include="source\sdk\hl2_src\clientmode\clientmode.h" />
+    <ClInclude Include="source\sdk\hl2_src\convar\convar.h" />
+    <ClInclude Include="source\sdk\hl2_src\engineclient\engineclient.h" />
+    <ClInclude Include="source\sdk\hl2_src\enginevgui\enginevgui.h" />
+    <ClInclude Include="source\sdk\hl2_src\entitylist\entitylist.h" />
+    <ClInclude Include="source\sdk\hl2_src\globalvars\globalvars.h" />
+    <ClInclude Include="source\sdk\hl2_src\hl2_src.h" />
+    <ClInclude Include="source\sdk\hl2_src\input\input.h" />
+    <ClInclude Include="source\sdk\hl2_src\panel\panel.h" />
+    <ClInclude Include="source\sdk\hl2_src\surface\surface.h" />
+    <ClInclude Include="source\sdk\incs\bitbuf.h" />
+    <ClInclude Include="source\sdk\incs\classes.h" />
+    <ClInclude Include="source\sdk\incs\const.h" />
+    <ClInclude Include="source\sdk\incs\dt_common.h" />
+    <ClInclude Include="source\sdk\incs\dt_recv.h" />
+    <ClInclude Include="source\sdk\incs\enums.h" />
+    <ClInclude Include="source\sdk\incs\incs.h" />
+    <ClInclude Include="source\sdk\incs\math.h" />
+    <ClInclude Include="source\sdk\incs\structs.h" />
+    <ClInclude Include="source\sdk\incs\world.h" />
+    <ClInclude Include="source\sdk\interfaces\interfaces.h" />
+    <ClInclude Include="source\sdk\main\baseweapon\baseweapon.h" />
+    <ClInclude Include="source\sdk\main\main.h" />
+    <ClInclude Include="source\sdk\main\renderer.h" />
+    <ClInclude Include="source\sdk\sdk.h" />
+    <ClInclude Include="source\sdk\sigs\sigs.h" />
+    <ClInclude Include="source\sdk\steam_src\isteamapplist.h" />
+    <ClInclude Include="source\sdk\steam_src\isteamapps.h" />
+    <ClInclude Include="source\sdk\steam_src\isteamappticket.h" />
+    <ClInclude Include="source\sdk\steam_src\isteamclient.h" />
+    <ClInclude Include="source\sdk\steam_src\isteamcontroller.h" />
+    <ClInclude Include="source\sdk\steam_src\isteamdualsense.h" />
+    <ClInclude Include="source\sdk\steam_src\isteamfriends.h" />
+    <ClInclude Include="source\sdk\steam_src\isteamgamecoordinator.h" />
+    <ClInclude Include="source\sdk\steam_src\isteamgameserver.h" />
+    <ClInclude Include="source\sdk\steam_src\isteamgameserverstats.h" />
+    <ClInclude Include="source\sdk\steam_src\isteamhtmlsurface.h" />
+    <ClInclude Include="source\sdk\steam_src\isteamhttp.h" />
+    <ClInclude Include="source\sdk\steam_src\isteaminput.h" />
+    <ClInclude Include="source\sdk\steam_src\isteaminventory.h" />
+    <ClInclude Include="source\sdk\steam_src\isteammatchmaking.h" />
+    <ClInclude Include="source\sdk\steam_src\isteammusic.h" />
+    <ClInclude Include="source\sdk\steam_src\isteammusicremote.h" />
+    <ClInclude Include="source\sdk\steam_src\isteamnetworking.h" />
+    <ClInclude Include="source\sdk\steam_src\isteamnetworkingmessages.h" />
+    <ClInclude Include="source\sdk\steam_src\isteamnetworkingsockets.h" />
+    <ClInclude Include="source\sdk\steam_src\isteamnetworkingutils.h" />
+    <ClInclude Include="source\sdk\steam_src\isteamparentalsettings.h" />
+    <ClInclude Include="source\sdk\steam_src\isteamps3overlayrenderer.h" />
+    <ClInclude Include="source\sdk\steam_src\isteamremoteplay.h" />
+    <ClInclude Include="source\sdk\steam_src\isteamremotestorage.h" />
+    <ClInclude Include="source\sdk\steam_src\isteamscreenshots.h" />
+    <ClInclude Include="source\sdk\steam_src\isteamugc.h" />
+    <ClInclude Include="source\sdk\steam_src\isteamuser.h" />
+    <ClInclude Include="source\sdk\steam_src\isteamuserstats.h" />
+    <ClInclude Include="source\sdk\steam_src\isteamutils.h" />
+    <ClInclude Include="source\sdk\steam_src\isteamvideo.h" />
+    <ClInclude Include="source\sdk\steam_src\matchmakingtypes.h" />
+    <ClInclude Include="source\sdk\steam_src\steamclientpublic.h" />
+    <ClInclude Include="source\sdk\steam_src\steamencryptedappticket.h" />
+    <ClInclude Include="source\sdk\steam_src\steamhttpenums.h" />
+    <ClInclude Include="source\sdk\steam_src\steamnetworkingfakeip.h" />
+    <ClInclude Include="source\sdk\steam_src\steamnetworkingtypes.h" />
+    <ClInclude Include="source\sdk\steam_src\steamps3params.h" />
+    <ClInclude Include="source\sdk\steam_src\steamtypes.h" />
+    <ClInclude Include="source\sdk\steam_src\steamuniverse.h" />
+    <ClInclude Include="source\sdk\steam_src\steam_api.h" />
+    <ClInclude Include="source\sdk\steam_src\steam_api_common.h" />
+    <ClInclude Include="source\sdk\steam_src\steam_api_flat.h" />
+    <ClInclude Include="source\sdk\steam_src\steam_api_internal.h" />
+    <ClInclude Include="source\sdk\steam_src\steam_gameserver.h" />
+    <ClInclude Include="source\utils\capture\capture.h" />
+    <ClInclude Include="source\utils\color\color.h" />
+    <ClInclude Include="source\utils\fnv1a\fnv1a.h" />
+    <ClInclude Include="source\utils\memory\memory.h" />
+    <ClInclude Include="source\utils\memory\winapi.h" />
+    <ClInclude Include="source\utils\netvars\netvars.h" />
+    <ClInclude Include="source\utils\offsets\offsets.h" />
+    <ClInclude Include="source\utils\scanner\scanner.h" />
+    <ClInclude Include="source\utils\utils.h" />
+    <ClInclude Include="source\utils\values\values.h" />
+    <ClInclude Include="source\utils\vector\vector.h" />
+    <ClInclude Include="source\utils\vfunc\vfunc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="includes\imgui\imgui.cpp" />
+    <ClCompile Include="includes\imgui\imgui_demo.cpp" />
+    <ClCompile Include="includes\imgui\imgui_draw.cpp" />
+    <ClCompile Include="includes\imgui\imgui_impl_dx10.cpp" />
+    <ClCompile Include="includes\imgui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="includes\imgui\imgui_impl_dx12.cpp" />
+    <ClCompile Include="includes\imgui\imgui_impl_dx9.cpp" />
+    <ClCompile Include="includes\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="includes\imgui\imgui_tables.cpp" />
+    <ClCompile Include="includes\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="includes\kiero\kiero.cpp" />
+    <ClCompile Include="includes\minhook\src\buffer.c" />
+    <ClCompile Include="includes\minhook\src\hde\hde32.c" />
+    <ClCompile Include="includes\minhook\src\hde\hde64.c" />
+    <ClCompile Include="includes\minhook\src\hook.c" />
+    <ClCompile Include="includes\minhook\src\trampoline.c" />
+    <ClCompile Include="source\sdk\incs\dt_recv_redef.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="includes\spoofer\spoofer.asm" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
